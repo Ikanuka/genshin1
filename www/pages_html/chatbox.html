@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form_style.css">
+    
+    <title>chatbox</title>
+</head>
+    <body>
+        <section id="chatbox">
+            <div id="chathead">
+                <div id="titre">
+                    <h1>Genshin Impact FanWebsite</h1>
+                </div>
+            </div>
+
+            <div id="chatcontent">
+                <div class="chatmessage">
+                    <span class="date"></span>
+                    <span class="heure"></span>
+                    <span class="username"></span>
+                    <span class="usermsg"></span>
+                </div>
+            </div>
+            
+            <div id=chatinput>
+                <form method="POST" action="../htbin/chatsend.py" id='envoie'>
+                    <input type="text" id="msg" name="msg" placeholder="Votre message........." autocomplete="off">
+                    <button id="submit2" type="submit">Envoyer</button>
+                </form>
+            </div>
+            <a href="../index.html" class ="back">Revenir à la page d'accueil.</a>
+        </section>
+        <script src="script/chatbox.js" ></script>
+        <noscript>JavaScript est nécessaire pour la fonctionnalité du site ! Veuillez l'activer.</noscript>
+    </body>
+</html>
+

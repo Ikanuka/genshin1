@@ -1,0 +1,173 @@
+@font-face {
+    font-family:"genshin" ;
+    src: url("fonts/zh-cn.ttf");
+}
+
+html{
+    overflow-y: scroll;
+    font-family: 'genshin';
+    color: rgb(46, 43, 71);
+    overflow-x: hidden;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    background: url(../img/genshin-impact-uhdpaper.com-4K-1.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+main{
+    width: 80%;
+    min-height: 500px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+nav{
+    overflow: hidden;
+    background: rgb(190, 141, 108);  
+    position: fixed;
+    width: 100%;
+    opacity: 1;
+}
+header{
+    position: static;
+    margin-top: -10px;
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+
+header li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+
+#logo{
+    font-weight: bold;
+    float: left;
+}
+
+
+
+#texte{
+    padding: 0px 20%;
+}
+
+.index_V{
+    margin-top: 100px;  /* ligne du #contenu */
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+.index_A{  
+    margin-top: 150px;  
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+.texte_centrer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    font-style: oblique ;
+}
+
+.artefacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;   /* ligne du #contenu */
+    margin-top: 15px;  /* ligne du #contenu */
+    background-color: rgb(90, 89, 100); /* ligne du #contenu */
+    opacity: 0.8;   /* ligne du #contenu */
+    border-radius: 20px;
+    width:455px ;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 0.4%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+.artefacts p{
+    font-size: 1.3em;
+}
+
+.border-venti{
+    border-color: black;
+    border-radius: 5%;
+    opacity: 0.8;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    
+    
+}
+
+.border-ayaka{
+    border-color: black;
+    border-radius: 5%;
+    opacity: 0.8;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+
+/* ***************************** MEDIA *********************************** */
+
+
+
+@media (min-width: 2900px) {
+
+    main{
+        width: 1700px;
+    }
+
+    nav{
+        width: 2500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header{
+        width: 2500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer{
+        bottom: 0;
+    }
+
+}

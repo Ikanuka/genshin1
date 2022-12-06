@@ -1,0 +1,231 @@
+@font-face {
+    font-family:"genshin" ;
+    src: url("fonts/zh-cn.ttf");
+}
+
+html{
+    overflow-y: scroll;
+    font-family: 'genshin';
+    color: rgb(46, 43, 71);
+    overflow-x: hidden;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-weight: 10;
+}
+.background_venti{
+    margin: 0px;
+    background-color: rgb(136, 197, 149);
+}
+
+.background_ayaka{
+    background: rgb(227, 239, 255);
+    padding: 0;
+    margin: 0;
+}
+
+.header_venti {
+    background-color: rgb(88, 110, 84);
+    display: flex;
+    position: sticky;
+    width: 100%;
+    margin: auto;
+    top: 0;
+}
+.header_ayaka{
+    background: rgb(127, 183, 209);
+    display: flex;
+    position: sticky;
+    width: 103%;
+    margin-left: -8px;
+    top: 0;
+    height: 100px;
+}
+
+a{
+    color: rgb(46, 45, 70);
+    text-decoration: none;
+    font-weight: 100;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.footer_venti {
+    
+    height: 150px;
+    background-color: rgb(88, 110, 84);
+    text-align: center;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+.footer_ayaka {
+    height: 150px;
+    background-color: rgb(141, 161, 204);
+    text-align: center;
+    width: 100%;
+    margin-bottom: -8px;
+}
+
+main{
+    width: 90%;
+    min-height: 500px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+div{
+    text-align: center;
+}
+
+.image-ayaka{
+    width: 500px;
+}
+
+.image-venti{
+    width: 500px;
+}
+
+
+.description{
+    text-align: center;
+    width: 61%;
+    margin-left: 20%;
+}
+
+.footer-content {
+    padding: 15px;
+}
+
+.intro{
+    text-align: center;
+    width: 61%;
+    margin-left: 20%;
+}
+
+.title-ayaka{
+    position: relative;
+    font-size: 25px;
+    left: 50%;
+    transform: translate(-80%,5%);
+}
+
+.title_arte_ayaka{
+    position: relative;
+    font-size: 110%;
+    left: 50%;
+    transform: translate(-115%,5%);
+}
+
+.title-venti{
+    position: relative;
+    font-size: 50px;
+    left: 40%;
+    transform: translate(10%,10%);
+}
+
+.title_arte_venti{
+    position: relative;
+    font-size: 45px;
+    left: 40%;
+    transform: translate(110%,-5%);
+}
+
+.logo img{
+    margin: 10px 0 0 10px;
+    width: 200px;
+}
+
+.details {
+    text-align: center;
+}
+
+.attributs{
+    border: 2px solid;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.competence{
+    border: 2px solid;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+
+@media (min-width: 2800px) {
+
+    main{
+        width: 1700px;
+    }
+
+    header{
+        width: 2500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer{
+        width: 2500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+
+    .image-ayaka{
+        margin: 0;
+        width: 300px;
+    }
+
+    .image-venti{
+    margin: 0;
+    width: 300px;
+    }
+
+    footer{
+        margin-left: -8px;
+    }
+
+    .title-venti{
+        margin-top: 20px;
+        font-size: 14px;
+        margin-right: 130px;
+    }
+    .title-ayaka{
+        margin-top: 10px;
+        font-size: 10px;
+       
+    }
+    
+    .title_arte_ayaka{
+        margin-top: 20px;
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    .title_arte_venti{
+        margin-top: 40px;
+        font-size: 20px;
+        margin-left: -150px;
+    }
+
+    header{
+        position: static;
+    }
+
+    .logo img{
+        margin-top: 20px;
+        width: 150px;
+    }
+}

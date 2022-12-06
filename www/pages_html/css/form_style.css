@@ -1,0 +1,241 @@
+@font-face {
+    font-family:"genshin" ;
+    src: url("fonts/zh-cn.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+
+body {
+    position:static;
+    left: 50%;
+    top: 50%;
+    transform: translate(0, 25%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #48895b;
+    padding-bottom: 5%;
+}
+
+h1{
+    position: static;
+    left: 50%;
+    transform: translate(7%, 50%);
+    font-size: 150%;
+}
+input::placeholder{
+    font-size: 110%;
+}
+
+#container, #container2 {
+    position: relative;
+    width: 450px;
+    min-height: 900px;
+    height: auto;
+    max-height: 900px;
+    background-color: #c9e3e5;
+    padding: 15px 25px 0px 25px;
+    margin-bottom: 5%;
+    border-radius: 25px;
+    font-size: 18px;
+  }
+
+#container_input, #container_input2{
+    position: relative;
+    height: auto;
+    max-height: 800px;
+    padding: 5% 5%;
+    margin-top: 10%;
+    background-color: #fff;
+    color: #000000de;
+    box-shadow: 0px 8px 15px #48895b;
+    border-radius: 45px;
+    font-size: 1rem;
+}
+
+#logo, #logo2 {
+      left: 50%;
+      transform: translate(38%, 0);
+  }
+
+#input_inscription #lastname, #firstname, #birthdate, #username, #userpwd, #useremail, #username1, #userpwd1{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    border:none;
+    width: 80%;
+    outline: none;
+    font-size: 100%;
+    padding-top: 7%;
+    border-bottom: 1px solid green;
+}
+
+#input_inscription, #input_inscription2 {
+    padding: 5%;
+    margin: 50px 0;
+  }
+
+#submit, #submit1 {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -25%);
+    width: 120px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: #48895b;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+#wrong_password, #wrong_username, #wrong_date{
+    margin-top: 3%;
+    color: red;
+}
+
+#good_submit{
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 38%;
+    transform: translate(-50%, 25%);
+    font-size: 1.2em;
+}
+
+#log{
+    display: flex;
+    position: absolute;
+    bottom: 35%;
+    left: 38%;
+    transform: translate(-50%, 25%);
+    font-size: 1.1em;
+}
+.affichage{
+    display: none;
+}
+
+.affichage.active{
+    display: block;
+}
+
+.form_footer{
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+    transform: translate(-50%, 25%);
+    font-size: 1.2em;
+}
+
+.form-link{
+    color: #48895b;
+    margin: 0 15%;
+}
+
+.back{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, 25%);
+    font-size: 1.2em;
+    width: 100%;
+}
+
+
+/******************************************/
+
+#chatbox{
+    position: relative;
+    width: 900px;
+    min-height: 720px;
+    height: auto;
+    max-height: 720px;
+    background-color: #c9e3e5;
+    padding: 15px 25px 0px 0px;
+    margin-bottom: 5%;
+    font-size: 18px;
+}
+
+#chathead{
+    position: relative;
+    background-color: #c9e3e5;
+    width: 100%;
+    min-height: 82px;
+    max-height: 82px;
+    margin-top: -2%;
+}
+
+#chatcontent{
+    overflow: scroll;
+    overflow-x: hidden;
+    position: relative;
+    width: 102.8%;
+    min-height: 575px;
+    height: auto;
+    max-height: 575px;
+    background-color: #ffffff;
+    margin-bottom: 5%;
+    font-size: 18px;
+}
+
+#chatinput{
+    display: flex;
+    position: relative;
+    background-color: #48895b;
+    width: 102.9%;
+    min-height: 50px;
+    max-height: 50px;
+    margin-top: -5%;
+    padding: 0;
+    border-radius: 0px;
+}
+#msg, #submit2{
+    display: flex;
+    width: 377%
+}
+
+
+#titre{
+    left: 50%;
+    transform: translate(25%,25%);
+}
+
+@media screen and (max-width: 800px) {
+    body {
+    transform: translate(0%, 0%);
+    margin-left: 25%;
+    }
+    #chatbox{
+        width: 580px;
+    }
+    #chatinput{
+        width: 104.5%;
+    }
+    #submit2, #msg{
+        width: 251.5%;
+    }
+}
+  @media screen and (max-width: 500px) {
+    body {
+    margin-left: 75%;
+    margin-top: 50%;
+    }
+    #chatbox{
+        width: 580px;
+    }
+    html{
+        width: 500px;
+    }
+    #chatcontent{
+        width: 104.5%;
+    }
+}
